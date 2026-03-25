@@ -1,0 +1,23 @@
+/* Tailwind CSS – required by the Invisphere platform layer */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── XFA / Marex brand design tokens ── */
+:root {
+  --navy:       #0a1628;
+  --navy-mid:   #0f2847;
+  --blue:       #1a5ea8;
+  --blue-lgt:   #2d79d1;
+  --white:      #ffffff;
+  --font:       "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Styles isolated for secondary pages. Marex original CSS handles the homepage. */
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+.app-shell main { flex: 1; }
+

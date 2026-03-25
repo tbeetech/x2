@@ -1,0 +1,71 @@
+.otnotice-content {
+    padding: 0 !important;
+}
+.otnotice-content ul {
+    padding: 0 0 0 20px !important;
+}
+.otnotice-content .otnotice-section:first-of-type .otnotice-section-header {
+    font-size: 50px !important;
+    margin: 0 0 24px !important;
+}
+.otnotice-content .otnotice-section:not(:first-of-type) .otnotice-section-header {
+    font-size: 40px !important;
+    margin: 48px 0 24px !important;
+}
+
+.otnotice-content p {
+    margin: 24px 0 0 !important;
+}
+
+.otnotice-content table {
+    min-width: 0 !important;
+}
+
+.otnotice-content table td {
+    padding: 7px 20px !important;
+}
+
+.otnotice-content table td:first-child {
+    padding-left: 0 !important;
+}
+
+.otnotice-content table td:last-child {
+    padding-right: 0 !important;
+}
+
+.otnotice-section-content table {
+    border-collapse: collapse !important;
+    margin: 24px 0 !important;
+}
+
+.otnotice-section-content tr,
+.otnotice-section-content td {
+    border: none !important;
+}
+
+.otnotice-section-content td {
+    border-top: 1px solid rgba(80, 80, 104, 0.2) !important;
+}
+
+.otnotice-section-content td p:first-child {
+    margin-top: 0 !important;
+}
+
+.otnotice-section-content td p:last-child {
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 1500px) {
+    .otnotice-content .otnotice-section:first-of-type .otnotice-section-header {
+        font-size: 44px !important;
+    }
+    .otnotice-content .otnotice-section:not(:first-of-type) .otnotice-section-header {
+        font-size: 36px !important;
+    }
+}
+
+@media (max-width: 1160px) {
+    .otnotice-content .otnotice-section:first-of-type .otnotice-section-header {
+        font-size: 40px !important;
+    }
+}

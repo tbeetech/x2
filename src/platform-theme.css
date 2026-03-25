@@ -1,0 +1,116 @@
+/* ============================================================
+   XFA PLATFORM THEME ADAPTER
+   Maps the Invisphere platform's dark Tailwind design system
+   to XFA / Marex brand colours.
+   Import this AFTER Tailwind's utilities layer.
+   ============================================================ */
+
+/* ── 1. Root palette override ── */
+:root {
+  /* XFA brand tokens */
+  --navy:       #0a1628;
+  --navy-mid:   #0f2847;
+  --navy-drk:   #070f1a;
+  --blue:       #1a5ea8;
+  --blue-lgt:   #2d79d1;
+  --white:      #ffffff;
+  --font:       "Inter", ui-sans-serif, system-ui;
+
+  /* Trading custom properties (kept from Invisphere) */
+  --color-profit:        #00ff88;
+  --color-loss:          #ff4757;
+  --color-primary-glow:  #2d79d1;
+  --color-secondary-glow:#1a5ea8;
+  --glass-bg:            rgba(15, 40, 71, 0.45);
+  --glass-border:        rgba(45, 121, 209, 0.2);
+  --glass-hover:         rgba(45, 121, 209, 0.08);
+}
+
+/* ── 2. Platform page root background ──
+   Applied via .platform-root wrapper on MainLayout / AuthLayout;
+   does NOT touch the XFA marketing pages. */
+.platform-root {
+  min-height: 100vh;
+  background: linear-gradient(
+    150deg,
+    var(--navy)      0%,
+    var(--navy-mid)  40%,
+    #122040          70%,
+    var(--navy)      100%
+  );
+  background-attachment: fixed;
+}
+
+/* ── 3. Platform nav (SiteNav & AuthLayout branding) ──
+   Override slate-950 topbar → XFA navy, blue accents */
+.platform-nav,
+nav[class*="bg-slate-9"] {
+  background-color: var(--navy) !important;
+  border-bottom-color: var(--blue) !important;
+}
+
+/* ── 4. Primary gradient buttons → XFA blue ──
+   Invisphere uses from-blue-500 to-purple-600; we nudge only
+   the custom CSS vars so Tailwind classes still render but with
+   brand-correct hues. We do NOT strip all gradients—they still
+   look premium; we just anchor the palette. */
+:root {
+  /* Tailwind v3 doesn't expose internal colour vars, so we target
+     the specific named gradient used throughout the platform. */
+  --tw-gradient-from:    #1a5ea8 !important;
+  --tw-gradient-stops:   var(--tw-gradient-from), #2d79d1 !important;
+  --tw-gradient-to:      #2d79d1 !important;
+}
+
+/* Keep glow accents on key UI elements */
+.bg-gradient-to-r.from-blue-500.to-purple-600,
+.hover\:from-blue-400:hover,
+.hover\:to-purple-500:hover {
+  background-image: linear-gradient(
+    to right,
+    var(--blue),
+    var(--blue-lgt)
+  ) !important;
+}
+
+/* ── 5. Logo / brand name overrides ──
+   Any element carrying the Invisphere wordmark gets re-branded */
+.xfa-brand-wordmark::before {
+  content: "XFA";
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+.xfa-brand-sub::before {
+  content: "A division of Marex";
+  font-size: 0.6rem;
+  color: #a0b4cc;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ── 6. Auth layout card ── */
+[class*="AuthLayout"] .logo-container,
+a[href="/"][class*="flex items-center gap"] {
+  color: var(--white);
+}
+
+/* ── 7. Focus rings → XFA blue ── */
+*:focus-visible {
+  outline-color: var(--blue-lgt) !important;
+}
+[class*="focus:ring-blue"] {
+  --tw-ring-color: rgba(45, 121, 209, 0.4) !important;
+}
+[class*="focus:border-blue"] {
+  border-color: var(--blue-lgt) !important;
+}
+
+/* ── 8. Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--navy-drk); }
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--blue-lgt); }

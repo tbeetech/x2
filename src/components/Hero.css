@@ -1,0 +1,128 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  overflow: hidden;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background slides */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.hero__bg.active { opacity: 1; }
+
+/* Dark gradient overlay */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10, 22, 40, 0.85) 0%,
+    rgba(10, 22, 40, 0.5) 60%,
+    rgba(10, 22, 40, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+/* Text block */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 2.5rem;
+  color: var(--white);
+}
+.hero__content.fade-out { opacity: 0; transition: opacity 0.35s; }
+.hero__content.fade-in  { opacity: 1; transition: opacity 0.35s; }
+
+.hero__headline {
+  font-size: clamp(1.4rem, 3vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.25;
+  max-width: 650px;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.hero__stat {
+  display: inline-block;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: 30px;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 12px rgba(26,94,168,0.5);
+}
+
+.hero__credit {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.5);
+  max-width: 500px;
+  margin-top: 0.5rem;
+}
+
+/* Dots */
+.hero__dots {
+  position: absolute;
+  bottom: 1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 3;
+}
+.hero__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+.hero__dot--active {
+  background: var(--white);
+  transform: scale(1.3);
+}
+
+/* Arrow buttons */
+.hero__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: var(--white);
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.hero__arrow:hover { background: rgba(255,255,255,0.25); }
+.hero__arrow--prev { left: 1.5rem; }
+.hero__arrow--next { right: 1.5rem; }
+
+@media (max-width: 620px) {
+  .hero { height: 400px; }
+  .hero__arrow { display: none; }
+}
