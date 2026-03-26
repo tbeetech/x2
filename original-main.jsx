@@ -35,7 +35,9 @@
 <li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-40"><a href="/services">Services</a>
 <ul class="sub-menu">
 	<li id="menu-item-647" class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="/services#markets">Equity Derivatives</a>
-	<ul class="sub-menu">
+		<li id="menu-item-647" class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="/platform">Investment & Trading</a>
+
+		<ul class="sub-menu">
 		<li id="menu-item-649" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-649"><a href="/services#markets">Equity Options</a></li>
 		<li id="menu-item-648" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-648"><a href="/services#markets">Index Options</a></li>
 	</ul>
