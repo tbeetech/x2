@@ -420,7 +420,7 @@ export function AdminDashboardPage() {
         <div className="min-w-0 flex-1">
           <h1 className="text-2xl sm:text-3xl font-semibold text-white truncate">Admin control center</h1>
           <p className="text-sm text-slate-400 mt-1">
-            Approve treasury instructions, manage verifications, and curate Invisphere market data in real time.
+            Approve treasury instructions, manage verifications, and curate XFA market data in real time.
           </p>
         </div>
         <div className="inline-flex items-center gap-2 rounded-full border border-blue-400/40 bg-blue-500/10 px-3 sm:px-4 py-1 text-xs sm:text-sm font-semibold text-blue-200 shrink-0">
