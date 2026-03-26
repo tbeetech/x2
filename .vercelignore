@@ -2,7 +2,6 @@
 server/
 
 # Archive / scraper artefacts – not part of the React build
-offline-static-clone/
 xfa-clone.zip
 xfa-offline-static.zip
 

@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Generated copies of the static homepage
+public/landpage/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

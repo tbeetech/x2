@@ -19,14 +19,12 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 // XFA original shell
-import OriginalHeader from './components/OriginalHeader'
-import OriginalMain   from './components/OriginalMain'
-import OriginalFooter from './components/OriginalFooter'
 import Navbar         from './components/Navbar'
 import Footer         from './components/Footer'
 import ConsentPrompt  from './components/ConsentPrompt'
 import Services       from './pages/Services'
 import AboutUs        from './pages/AboutUs'
+import StaticLandpage from './pages/StaticLandpage'
 
 // Invisphere layouts
 import { MainLayout }  from './layouts/MainLayout'
@@ -120,17 +118,8 @@ function App() {
               XFA PUBLIC WEBSITE
            */}
 
-          {/* Carbon-copy XFA homepage (no extra nav) */}
-          <Route
-            path="/"
-            element={
-              <>
-                <OriginalHeader />
-                <OriginalMain />
-                <OriginalFooter />
-              </>
-            }
-          />
+          {/* Static XFA homepage lives in /landpage/index.html for easy manual edits */}
+          <Route path="/" element={<StaticLandpage />} />
 
           {/* XFA standard pages share Navbar + Footer */}
           <Route element={<XFAShell />}>
