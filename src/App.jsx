@@ -24,7 +24,7 @@ import Footer         from './components/Footer'
 import ConsentPrompt  from './components/ConsentPrompt'
 import Services       from './pages/Services'
 import AboutUs        from './pages/AboutUs'
-import StaticLandpage from './pages/StaticLandpage'
+import StaticLandingPage from './pages/StaticLandingPage'
 
 // Invisphere layouts
 import { MainLayout }  from './layouts/MainLayout'
@@ -118,8 +118,8 @@ function App() {
               XFA PUBLIC WEBSITE
            */}
 
-          {/* Static XFA homepage lives in /landpage/index.html for easy manual edits */}
-          <Route path="/" element={<StaticLandpage />} />
+          {/* Static XFA landing page lives in /landpage/index.html for easy manual edits */}
+          <Route path="/" element={<StaticLandingPage />} />
 
           {/* XFA standard pages share Navbar + Footer */}
           <Route element={<XFAShell />}>

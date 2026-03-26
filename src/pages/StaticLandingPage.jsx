@@ -1,4 +1,4 @@
-export function StaticLandpage() {
+export function StaticLandingPage() {
   return (
     <div
       style={{
@@ -20,4 +20,4 @@ export function StaticLandpage() {
   )
 }
 
-export default StaticLandpage
+export default StaticLandingPage
