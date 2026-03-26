@@ -5,7 +5,9 @@ const source = resolve(process.cwd(), 'landpage');
 const target = resolve(process.cwd(), 'public', 'landpage');
 
 if (!existsSync(source)) {
-  console.error(`No landing page directory found at ${source}. Ensure the /landpage folder exists before running dev/build.`);
+  console.error(
+    `No landing page directory found at ${source}. Ensure the landing page source folder (/landpage) exists before running dev/build.`,
+  );
   process.exit(1);
 }
 
