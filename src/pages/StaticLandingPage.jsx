@@ -8,7 +8,7 @@ export function StaticLandingPage() {
     >
       <iframe
         src="/landpage/index.html"
-        title="XFA Company Homepage"
+        title="XFA Landing Page"
         sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation-by-user-activation"
         style={{
           width: '100%',

@@ -1,9 +1,8 @@
 import { cpSync, existsSync, rmSync } from 'fs';
 import { resolve } from 'path';
 
-const repoRoot = resolve(process.cwd());
-const source = resolve(repoRoot, 'landpage');
-const target = resolve(repoRoot, 'public', 'landpage');
+const source = resolve(process.cwd(), 'landpage');
+const target = resolve(process.cwd(), 'public', 'landpage');
 
 if (!existsSync(source)) {
   console.error(`No landing page directory found at ${source}. Ensure the /landpage folder exists before running dev/build.`);
