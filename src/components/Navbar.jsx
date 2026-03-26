@@ -11,6 +11,7 @@ const navLinks = [
       { label: 'XFA Smart', to: '/services/xfa-smart' },
       { label: 'Global Trading Hours', to: '/services/global-trading-hours' },
       { label: 'Investments and Trading', to: '/platform' },
+      { label: 'Invisphere', to: '/platform' },
     ],
   },
   {
