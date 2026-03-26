@@ -24,7 +24,7 @@ import Footer         from './components/Footer'
 import ConsentPrompt  from './components/ConsentPrompt'
 import Services       from './pages/Services'
 import AboutUs        from './pages/AboutUs'
-import StaticLandingPage from './pages/StaticLandingPage'
+import StaticLandingPage from './pages/StaticLandingPage.jsx'
 
 // Invisphere layouts
 import { MainLayout }  from './layouts/MainLayout'
