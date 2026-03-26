@@ -23,18 +23,7 @@ const navLinks = [
     ],
   },
   { label: 'Contact', to: '/contact' },
-  {
-    label: 'Platform', to: '/login',
-    children: [
-      { label: 'Client Login', to: '/login' },
-      { label: 'Dashboard', to: '/dashboard' },
-      { label: 'Market', to: '/market' },
-      { label: 'Investments', to: '/investments' },
-      { label: 'Transactions', to: '/transactions' },
-      { label: 'Daily P\u0026L', to: '/pnl' },
-      { label: 'Admin Portal', to: '/admin' },
-    ],
-  },
+  { label: 'Platform', to: '/platform', cta: true },
 ]
 
 export default function Navbar() {
@@ -77,6 +66,12 @@ export default function Navbar() {
                     ))}
                   </ul>
                 )}
+              </div>
+            ) : link.cta ? (
+              <div key={link.label} className="navbar__item navbar__item--cta">
+                <NavLink to={link.to} className="navbar__cta-btn">
+                  {link.label}
+                </NavLink>
               </div>
             ) : (
               <div key={link.label} className="navbar__item">
@@ -128,6 +123,12 @@ export default function Navbar() {
                     </ul>
                   )}
                 </>
+              ) : link.cta ? (
+                <div className="navbar__mobile-cta">
+                  <NavLink to={link.to} className="navbar__cta-btn" onClick={() => setMenuOpen(false)}>
+                    {link.label}
+                  </NavLink>
+                </div>
               ) : (
                 <NavLink to={link.to} onClick={() => setMenuOpen(false)}>
                   {link.label}
