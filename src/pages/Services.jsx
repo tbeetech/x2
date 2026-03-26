@@ -115,7 +115,7 @@ export default function Services() {
             <h2>Comprehensive execution solutions</h2>
           </div>
           {mainServices.map((svc, i) => (
-            <div key={svc.id} className={`svc-row ${i % 2 === 1 ? 'svc-row--flip' : ''}`}>
+            <div key={svc.id} id={svc.id} className={`svc-row ${i % 2 === 1 ? 'svc-row--flip' : ''}`}>
               <img src={svc.img} alt={svc.title} />
               <div className="svc-row__text">
                 <h3>{svc.title}</h3>
@@ -132,7 +132,7 @@ export default function Services() {
       </section>
 
       {/* Markets */}
-      <section className="markets-section">
+      <section id="markets" className="markets-section">
         <div className="container--wide">
           <div className="section-header">
             <span className="section-tag">Markets</span>

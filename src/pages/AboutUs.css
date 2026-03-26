@@ -171,14 +171,17 @@
 .faq-item__a p { font-size: 0.88rem; color: var(--gray); line-height: 1.7; }
 
 /* Join */
-.join-section {
+.join-section,
+.compliance-section {
   padding: 5rem 2rem;
   background: var(--navy);
   color: var(--white);
   text-align: center;
 }
-.join-section h2 { font-size: 2rem; margin-bottom: 0.6rem; }
-.join-section p  { color: #9ab4cc; margin-bottom: 2rem; font-size: 0.95rem; }
+.join-section h2,
+.compliance-section h2 { font-size: 2rem; margin-bottom: 0.6rem; }
+.join-section p,
+.compliance-section p  { color: #9ab4cc; margin-bottom: 2rem; font-size: 0.95rem; }
 
 .cta-btn {
   display: inline-block;
