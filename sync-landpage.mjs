@@ -10,8 +10,12 @@ if (!existsSync(source)) {
   process.exit(1);
 }
 
-// Clean any previous copy to keep the public version in sync with edits.
-rmSync(target, { recursive: true, force: true });
-cpSync(source, target, { recursive: true });
-
-console.log(`Synced ${source} -> ${target}`);
+try {
+  // Clean any previous copy to keep the public version in sync with edits.
+  rmSync(target, { recursive: true, force: true });
+  cpSync(source, target, { recursive: true });
+  console.log(`Synced ${source} -> ${target}`);
+} catch (error) {
+  console.error('Failed to sync landpage assets:', error);
+  process.exit(1);
+}
