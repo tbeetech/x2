@@ -25,7 +25,7 @@ export default function OriginalMain() {
                 </a>
 
                 <!-- Logo -->
-                <a href="https://xfa.marex.com" id="logo" title="XFA">
+                <a href="/" id="logo" title="XFA">
                     <img src="https://xfa.marex.com/wp-content/themes/marex-xfa/assets/img/logo.svg" alt="XFA Logo">
                     <img class="square" src="https://xfa.marex.com/wp-content/themes/marex-xfa/assets/img/logo-square.svg" alt="XFA Logo">
                 </a>
@@ -37,36 +37,36 @@ export default function OriginalMain() {
                     <!-- Menu -->
                     <nav class="nav" role="navigation" aria-label="Main Navigation">
                         <ul class="menu">
-                            <li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item columns-one-column alignment-left menu-item-36"><a href="https://xfa.marex.com/" aria-current="page">Home</a></li>
-<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-37"><a href="https://xfa.marex.com/about-us/">About Us</a>
+                            <li id="menu-item-36" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item columns-one-column alignment-left menu-item-36"><a href="/" aria-current="page">Home</a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-37"><a href="/about">About Us</a>
 <ul class="sub-menu">
-	<li id="menu-item-603" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-603"><a href="https://xfa.marex.com/about-us/">About Us</a></li>
-	<li id="menu-item-628" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-628"><a href="https://xfa.marex.com/about-us/join-the-team/">Join the team</a></li>
-	<li id="menu-item-604" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-604"><a href="https://xfa.marex.com/about-us/faqs/">FAQs</a></li>
-	<li id="menu-item-605" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-605"><a href="https://xfa.marex.com/about-us/compliance-disclosures/">Compliance &amp; Disclosures</a></li>
+	<li id="menu-item-603" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-603"><a href="/about">About Us</a></li>
+	<li id="menu-item-628" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-628"><a href="/about">Join the team</a></li>
+	<li id="menu-item-604" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-604"><a href="/about">FAQs</a></li>
+	<li id="menu-item-605" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-605"><a href="/about">Compliance &amp; Disclosures</a></li>
 </ul>
 </li>
-<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-40"><a href="https://xfa.marex.com/services/">Services</a>
+<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-40"><a href="/services">Services</a>
 <ul class="sub-menu">
-	<li id="menu-item-647" class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="https://xfa.marex.com/markets/equity-derivatives/">Equity Derivatives</a>
+	<li id="menu-item-647" class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="/services">Equity Derivatives</a>
 	<ul class="sub-menu">
-		<li id="menu-item-649" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-649"><a href="https://xfa.marex.com/markets/equity-derivatives/equity-desk/">Equity Options</a></li>
-		<li id="menu-item-648" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-648"><a href="https://xfa.marex.com/markets/equity-derivatives/index-options/">Index Options</a></li>
+		<li id="menu-item-649" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-649"><a href="/services">Equity Options</a></li>
+		<li id="menu-item-648" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-648"><a href="/services">Index Options</a></li>
 	</ul>
 </li>
-	<li id="menu-item-644" class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-644"><a href="https://xfa.marex.com/markets/futures-and-futures-options/">Futures &amp; Futures Options</a>
+	<li id="menu-item-644" class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-644"><a href="/services">Futures &amp; Futures Options</a>
 	<ul class="sub-menu">
-		<li id="menu-item-645" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-645"><a href="https://xfa.marex.com/markets/futures-and-futures-options/euro-dollar/">SOFR/Euro Dollar</a></li>
-		<li id="menu-item-646" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-646"><a href="https://xfa.marex.com/markets/futures-and-futures-options/futures-commodities/">Futures &amp; Commodities</a></li>
+		<li id="menu-item-645" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-645"><a href="/services">SOFR/Euro Dollar</a></li>
+		<li id="menu-item-646" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-646"><a href="/services">Futures &amp; Commodities</a></li>
 	</ul>
 </li>
-	<li id="menu-item-293" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-293"><a href="https://xfa.marex.com/services/flex-options/">FLEX Options-Meet FLEX-FA</a></li>
-	<li id="menu-item-294" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-294"><a href="https://xfa.marex.com/services/global-trading-hours/">Global Trading Hours</a></li>
-	<li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="https://xfa.marex.com/services/xfa-smart/">XFA SMART</a></li>
+	<li id="menu-item-293" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-293"><a href="/services">FLEX Options-Meet FLEX-FA</a></li>
+	<li id="menu-item-294" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-294"><a href="/services">Global Trading Hours</a></li>
+	<li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="/services">XFA SMART</a></li>
 </ul>
 </li>
-<li id="menu-item-641" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="https://xfa.marex.com/news-updates/">News &amp; Updates</a></li>
-<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-38"><a href="https://xfa.marex.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-641" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="/contact">News &amp; Updates</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-38"><a href="/contact">Contact Us</a></li>
                         </ul>
                     </nav>
 
@@ -93,36 +93,36 @@ export default function OriginalMain() {
                     <div class="show-medium">
                         <nav class="nav" role="navigation" aria-label="Main Navigation">
                             <ul class="menu prevent-columns">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item columns-one-column alignment-left menu-item-36"><a href="https://xfa.marex.com/" aria-current="page">Home</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-37"><a href="https://xfa.marex.com/about-us/">About Us</a>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item columns-one-column alignment-left menu-item-36"><a href="/" aria-current="page">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-37"><a href="/about">About Us</a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-603"><a href="https://xfa.marex.com/about-us/">About Us</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-628"><a href="https://xfa.marex.com/about-us/join-the-team/">Join the team</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-604"><a href="https://xfa.marex.com/about-us/faqs/">FAQs</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-605"><a href="https://xfa.marex.com/about-us/compliance-disclosures/">Compliance &amp; Disclosures</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-603"><a href="/about">About Us</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-628"><a href="/about">Join the team</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-604"><a href="/about">FAQs</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-605"><a href="/about">Compliance &amp; Disclosures</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-40"><a href="https://xfa.marex.com/services/">Services</a>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-40"><a href="/services">Services</a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="https://xfa.marex.com/markets/equity-derivatives/">Equity Derivatives</a>
+	<li class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="/services">Equity Derivatives</a>
 	<ul class="sub-menu">
-		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-649"><a href="https://xfa.marex.com/markets/equity-derivatives/equity-desk/">Equity Options</a></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-648"><a href="https://xfa.marex.com/markets/equity-derivatives/index-options/">Index Options</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-649"><a href="/services">Equity Options</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-648"><a href="/services">Index Options</a></li>
 	</ul>
 </li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-644"><a href="https://xfa.marex.com/markets/futures-and-futures-options/">Futures &amp; Futures Options</a>
+	<li class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-644"><a href="/services">Futures &amp; Futures Options</a>
 	<ul class="sub-menu">
-		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-645"><a href="https://xfa.marex.com/markets/futures-and-futures-options/euro-dollar/">SOFR/Euro Dollar</a></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-646"><a href="https://xfa.marex.com/markets/futures-and-futures-options/futures-commodities/">Futures &amp; Commodities</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-645"><a href="/services">SOFR/Euro Dollar</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-646"><a href="/services">Futures &amp; Commodities</a></li>
 	</ul>
 </li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-293"><a href="https://xfa.marex.com/services/flex-options/">FLEX Options-Meet FLEX-FA</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-294"><a href="https://xfa.marex.com/services/global-trading-hours/">Global Trading Hours</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="https://xfa.marex.com/services/xfa-smart/">XFA SMART</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-293"><a href="/services">FLEX Options-Meet FLEX-FA</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-294"><a href="/services">Global Trading Hours</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="/services">XFA SMART</a></li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="https://xfa.marex.com/news-updates/">News &amp; Updates</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-38"><a href="https://xfa.marex.com/contact-us/">Contact Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="/contact">News &amp; Updates</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-38"><a href="/contact">Contact Us</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -134,7 +134,7 @@ export default function OriginalMain() {
 
 
                     <!-- Mobile Marex Logo -->
-                    <a href="https://xfa.marex.com" id="mobile-marex-logo" title="Marex">
+                    <a href="/" id="mobile-marex-logo" title="Marex">
                         <img class="logo-large" src="https://xfa.marex.com/wp-content/themes/marex-xfa/assets/img/marex-logo.svg" alt="Marex Logo">
                     </a>
 
