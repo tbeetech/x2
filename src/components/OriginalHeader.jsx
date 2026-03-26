@@ -116,6 +116,7 @@ export default function OriginalHeader() {
 </li>
 <li id="menu-item-641" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="https://xfa.marex.com/news-updates/">News &amp; Updates</a></li>
 <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-38"><a href="https://xfa.marex.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-800" class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-800"><a href="/platform">Platform</a></li>
                         </ul>
                     </nav>
 
@@ -174,6 +175,7 @@ export default function OriginalHeader() {
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="https://xfa.marex.com/news-updates/">News &amp; Updates</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-38"><a href="https://xfa.marex.com/contact-us/">Contact Us</a></li>
+<li class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-800"><a href="/platform">Platform</a></li>
                             </ul>
                         </nav>
                     </div>

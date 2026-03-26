@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import './Home.css'
 
@@ -127,6 +128,22 @@ export default function Home() {
             </ul>
             <a href="/about" className="cta-btn">Meet the Team →</a>
           </div>
+        </div>
+      </section>
+
+      {/* Platform CTA */}
+      <section className="platform-cta">
+        <div className="container--wide platform-cta__inner">
+          <span className="section-tag">Platform</span>
+          <h2>Trade smarter with the XFA Platform</h2>
+          <p>
+            Access real-time market data, execute trades, and manage your
+            portfolio — all in one place. Experience the power of XFA&rsquo;s
+            institutional-grade trading platform.
+          </p>
+          <Link to="/platform" className="cta-btn">
+            Explore the Platform →
+          </Link>
         </div>
       </section>
 

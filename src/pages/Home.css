@@ -153,6 +153,36 @@
 }
 .cta-btn:hover { background: var(--blue); }
 
+/* Platform CTA */
+.platform-cta {
+  background: var(--navy);
+  color: var(--white);
+  padding: 5rem 0;
+  text-align: center;
+}
+.platform-cta__inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.platform-cta h2 {
+  font-size: 1.9rem;
+  color: var(--white);
+  margin: 0.4rem 0 1rem;
+  line-height: 1.3;
+}
+.platform-cta p {
+  font-size: 0.95rem;
+  color: #9ab4cc;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.platform-cta .cta-btn {
+  background: var(--blue);
+}
+.platform-cta .cta-btn:hover {
+  background: #2d79d1;
+}
+
 /* Contact CTA */
 .contact-cta {
   background: var(--off-white);
