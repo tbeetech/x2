@@ -154,6 +154,7 @@ export default function OriginalHeader() {
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-40"><a href="/services">Services</a>
 <ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="/platform">Investment & Trading Platform</a>
 	<li class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="/services#markets">Equity Derivatives</a>
 	<ul class="sub-menu">
 		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-649"><a href="/services#markets">Equity Options</a></li>
