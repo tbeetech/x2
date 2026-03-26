@@ -69,7 +69,9 @@ export default function Navbar() {
                   <ul className="navbar__dropdown">
                     {link.children.map((child) => (
                       <li key={child.label}>
-                        <NavLink to={child.to}>{child.label}</NavLink>
+                        <NavLink to={child.to} onClick={() => setOpenDrop(null)}>
+                          {child.label}
+                        </NavLink>
                       </li>
                     ))}
                   </ul>
