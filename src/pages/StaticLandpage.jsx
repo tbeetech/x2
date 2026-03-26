@@ -8,7 +8,7 @@ export function StaticLandpage() {
     >
       <iframe
         src="/landpage/index.html"
-        title="XFA Landing Page"
+        title="XFA Company Homepage"
         style={{
           width: '100%',
           minHeight: '100vh',
