@@ -30,28 +30,28 @@
 <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-37"><a href="/about">About Us</a>
 <ul class="sub-menu">
 	<li id="menu-item-603" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-603"><a href="/about">About Us</a></li>
-	<li id="menu-item-628" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-628"><a href="/about">Join the team</a></li>
-	<li id="menu-item-604" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-604"><a href="/about">FAQs</a></li>
-	<li id="menu-item-605" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-605"><a href="/about">Compliance &amp; Disclosures</a></li>
+	<li id="menu-item-628" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-628"><a href="/about#join-the-team">Join the team</a></li>
+	<li id="menu-item-604" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-604"><a href="/about#faqs">FAQs</a></li>
+	<li id="menu-item-605" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-605"><a href="/about#compliance">Compliance &amp; Disclosures</a></li>
 </ul>
 </li>
 <li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-40"><a href="/services">Services</a>
 <ul class="sub-menu">
-	<li id="menu-item-647" class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="/services">Equity Derivatives</a>
+	<li id="menu-item-647" class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="/services#markets">Equity Derivatives</a>
 	<ul class="sub-menu">
-		<li id="menu-item-649" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-649"><a href="/services">Equity Options</a></li>
-		<li id="menu-item-648" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-648"><a href="/services">Index Options</a></li>
+		<li id="menu-item-649" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-649"><a href="/services#markets">Equity Options</a></li>
+		<li id="menu-item-648" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-648"><a href="/services#markets">Index Options</a></li>
 	</ul>
 </li>
-	<li id="menu-item-644" class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-644"><a href="/services">Futures &amp; Futures Options</a>
+	<li id="menu-item-644" class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-644"><a href="/services#markets">Futures &amp; Futures Options</a>
 	<ul class="sub-menu">
-		<li id="menu-item-645" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-645"><a href="/services">SOFR/Euro Dollar</a></li>
-		<li id="menu-item-646" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-646"><a href="/services">Futures &amp; Commodities</a></li>
+		<li id="menu-item-645" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-645"><a href="/services#markets">SOFR/Euro Dollar</a></li>
+		<li id="menu-item-646" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-646"><a href="/services#markets">Futures &amp; Commodities</a></li>
 	</ul>
 </li>
-	<li id="menu-item-293" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-293"><a href="/services">FLEX Options-Meet FLEX-FA</a></li>
-	<li id="menu-item-294" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-294"><a href="/services">Global Trading Hours</a></li>
-	<li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="/services">XFA SMART</a></li>
+	<li id="menu-item-293" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-293"><a href="/services#flex">FLEX Options-Meet FLEX-FA</a></li>
+	<li id="menu-item-294" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-294"><a href="/services#gth">Global Trading Hours</a></li>
+	<li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="/services#smart">XFA SMART</a></li>
 </ul>
 </li>
 <li id="menu-item-641" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="/contact">News &amp; Updates</a></li>
@@ -86,28 +86,28 @@
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-37"><a href="/about">About Us</a>
 <ul class="sub-menu">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-603"><a href="/about">About Us</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-628"><a href="/about">Join the team</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-604"><a href="/about">FAQs</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-605"><a href="/about">Compliance &amp; Disclosures</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-628"><a href="/about#join-the-team">Join the team</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-604"><a href="/about#faqs">FAQs</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-605"><a href="/about#compliance">Compliance &amp; Disclosures</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-40"><a href="/services">Services</a>
 <ul class="sub-menu">
-	<li class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="/services">Equity Derivatives</a>
+	<li class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="/services#markets">Equity Derivatives</a>
 	<ul class="sub-menu">
-		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-649"><a href="/services">Equity Options</a></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-648"><a href="/services">Index Options</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-649"><a href="/services#markets">Equity Options</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-648"><a href="/services#markets">Index Options</a></li>
 	</ul>
 </li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-644"><a href="/services">Futures &amp; Futures Options</a>
+	<li class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-644"><a href="/services#markets">Futures &amp; Futures Options</a>
 	<ul class="sub-menu">
-		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-645"><a href="/services">SOFR/Euro Dollar</a></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-646"><a href="/services">Futures &amp; Commodities</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-645"><a href="/services#markets">SOFR/Euro Dollar</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-646"><a href="/services#markets">Futures &amp; Commodities</a></li>
 	</ul>
 </li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-293"><a href="/services">FLEX Options-Meet FLEX-FA</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-294"><a href="/services">Global Trading Hours</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="/services">XFA SMART</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-293"><a href="/services#flex">FLEX Options-Meet FLEX-FA</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-294"><a href="/services#gth">Global Trading Hours</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="/services#smart">XFA SMART</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="/contact">News &amp; Updates</a></li>
@@ -254,8 +254,8 @@
 
                     <!-- Footer Menu -->
                     <ul class="footer-menu">
-                        <li id="menu-item-274" class="menu-item menu-item-type-post_type menu-item-object-page columns- alignment- menu-item-274"><a href="/about">FAQs</a></li>
-<li id="menu-item-273" class="menu-item menu-item-type-post_type menu-item-object-page columns- alignment- menu-item-273"><a href="/about">Compliance &amp; Disclosures</a></li>
+                        <li id="menu-item-274" class="menu-item menu-item-type-post_type menu-item-object-page columns- alignment- menu-item-274"><a href="/about#faqs">FAQs</a></li>
+<li id="menu-item-273" class="menu-item menu-item-type-post_type menu-item-object-page columns- alignment- menu-item-273"><a href="/about#compliance">Compliance &amp; Disclosures</a></li>
 <li id="menu-item-276" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-276"><a href="https://www.marex.com/modern-slavery-statement/">Modern Slavery Statement</a></li>
 <li id="menu-item-277" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-277"><a href="https://www.marex.com/privacy-policy/">Privacy Policy</a></li>
 <li id="menu-item-278" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-278"><a href="https://www.marex.com/terms-of-use/">Terms of Use</a></li>

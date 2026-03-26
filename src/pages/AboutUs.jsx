@@ -104,7 +104,7 @@ export default function AboutUs() {
       </section>
 
       {/* Team */}
-      <section className="team-section">
+      <section id="join-the-team" className="team-section">
         <div className="container--wide">
           <div className="section-header">
             <span className="section-tag">Leadership</span>
@@ -140,7 +140,7 @@ export default function AboutUs() {
       </section>
 
       {/* FAQs */}
-      <section className="faq-section">
+      <section id="faqs" className="faq-section">
         <div className="container--wide">
           <div className="section-header">
             <span className="section-tag">FAQs</span>
@@ -183,6 +183,25 @@ export default function AboutUs() {
             className="cta-btn"
           >
             See Current Vacancies →
+          </a>
+        </div>
+      </section>
+
+      {/* Compliance */}
+      <section id="compliance" className="compliance-section">
+        <div className="container--wide">
+          <h2>Compliance &amp; Disclosures</h2>
+          <p>
+            XFA is a division of Marex. Our regulatory filings, privacy
+            policy, and terms of use are maintained on the Marex website.
+          </p>
+          <a
+            href="https://www.marex.com/privacy-policy/"
+            target="_blank"
+            rel="noreferrer"
+            className="cta-btn"
+          >
+            View Compliance Docs →
           </a>
         </div>
       </section>
