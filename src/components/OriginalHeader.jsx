@@ -110,12 +110,12 @@ export default function OriginalHeader() {
 	<li id="menu-item-293" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-293"><a href="https://xfa.marex.com/services/flex-options/">FLEX Options-Meet FLEX-FA</a></li>
 	<li id="menu-item-294" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-294"><a href="https://xfa.marex.com/services/global-trading-hours/">Global Trading Hours</a></li>
 	<li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="https://xfa.marex.com/services/xfa-smart/">XFA SMART</a></li>
+	<li id="menu-item-700" class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-700"><a href="/platform">Trading</a></li>
+	<li id="menu-item-701" class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-701"><a href="/platform">Investment</a></li>
 </ul>
 </li>
 <li id="menu-item-641" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="https://xfa.marex.com/news-updates/">News &amp; Updates</a></li>
 <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-38"><a href="https://xfa.marex.com/contact-us/">Contact Us</a></li>
-<li id="menu-item-700" class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-700"><a href="/platform">Trading</a></li>
-<li id="menu-item-701" class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-701"><a href="/platform">Investment</a></li>
                         </ul>
                     </nav>
 
@@ -168,12 +168,12 @@ export default function OriginalHeader() {
 	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-293"><a href="https://xfa.marex.com/services/flex-options/">FLEX Options-Meet FLEX-FA</a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-294"><a href="https://xfa.marex.com/services/global-trading-hours/">Global Trading Hours</a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="https://xfa.marex.com/services/xfa-smart/">XFA SMART</a></li>
+	<li class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-700"><a href="/platform">Trading</a></li>
+	<li class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-701"><a href="/platform">Investment</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="https://xfa.marex.com/news-updates/">News &amp; Updates</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-38"><a href="https://xfa.marex.com/contact-us/">Contact Us</a></li>
-<li class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-700"><a href="/platform">Trading</a></li>
-<li class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-701"><a href="/platform">Investment</a></li>
                             </ul>
                         </nav>
                     </div>
