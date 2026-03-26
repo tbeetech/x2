@@ -10,6 +10,7 @@ const navLinks = [
       { label: 'FLEX Options', to: '/services/flex-options' },
       { label: 'XFA Smart', to: '/services/xfa-smart' },
       { label: 'Global Trading Hours', to: '/services/global-trading-hours' },
+      { label: 'Investments and Trading', to: '/platform' },
     ],
   },
   {
@@ -68,7 +69,9 @@ export default function Navbar() {
                   <ul className="navbar__dropdown">
                     {link.children.map((child) => (
                       <li key={child.label}>
-                        <NavLink to={child.to}>{child.label}</NavLink>
+                        <NavLink to={child.to} onClick={() => setOpenDrop(null)}>
+                          {child.label}
+                        </NavLink>
                       </li>
                     ))}
                   </ul>
