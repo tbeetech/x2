@@ -25,8 +25,28 @@ export default defineConfig({
   css: {
     postcss: true,
   },
-  optimizeDeps: {
-    include: ['tailwindcss', 'postcss', 'autoprefixer'],
+  build: {
+    // Raise warning threshold to avoid noise; real splits are handled below
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        // Split large vendor libraries into separate cacheable chunks
+        manualChunks(id) {
+          if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/') || id.includes('node_modules/react-router-dom/')) {
+            return 'vendor-react'
+          }
+          if (id.includes('node_modules/chart.js/') || id.includes('node_modules/react-chartjs-2/')) {
+            return 'vendor-charts'
+          }
+          if (id.includes('node_modules/react-toastify/') || id.includes('node_modules/lucide-react/')) {
+            return 'vendor-ui'
+          }
+          if (id.includes('node_modules/socket.io-client/') || id.includes('node_modules/socket.io-parser/') || id.includes('node_modules/engine.io-client/')) {
+            return 'vendor-socket'
+          }
+        },
+      },
+    },
   },
 })
 
