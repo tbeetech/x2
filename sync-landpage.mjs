@@ -6,7 +6,7 @@ const source = resolve(repoRoot, 'landpage');
 const target = resolve(repoRoot, 'public', 'landpage');
 
 if (!existsSync(source)) {
-  console.error(`No landing page directory found at ${source}.`);
+  console.error(`No landing page directory found at ${source}. Ensure the /landpage folder exists before running dev/build.`);
   process.exit(1);
 }
 
@@ -16,6 +16,9 @@ try {
   cpSync(source, target, { recursive: true });
   console.log(`Synced ${source} -> ${target}`);
 } catch (error) {
-  console.error(`Failed to sync landing page assets from ${source} to ${target}:`, error);
+  console.error(
+    `Failed to sync landing page assets from ${source} to ${target}. Check permissions or disk space and retry.`,
+    error,
+  );
   process.exit(1);
 }
