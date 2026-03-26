@@ -112,6 +112,7 @@ export default function OriginalHeader() {
 	<li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="https://xfa.marex.com/services/xfa-smart/">XFA SMART</a></li>
 	<li id="menu-item-700" class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-700"><a href="/platform">Trading</a></li>
 	<li id="menu-item-701" class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-701"><a href="/platform">Investment</a></li>
+	<li id="menu-item-702" class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-702"><a href="/platform">Asset Acquisitions</a></li>
 </ul>
 </li>
 <li id="menu-item-641" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="https://xfa.marex.com/news-updates/">News &amp; Updates</a></li>
@@ -170,6 +171,7 @@ export default function OriginalHeader() {
 	<li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="https://xfa.marex.com/services/xfa-smart/">XFA SMART</a></li>
 	<li class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-700"><a href="/platform">Trading</a></li>
 	<li class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-701"><a href="/platform">Investment</a></li>
+	<li class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-702"><a href="/platform">Asset Acquisitions</a></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="https://xfa.marex.com/news-updates/">News &amp; Updates</a></li>
