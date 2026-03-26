@@ -1,0 +1,20 @@
+# Backend server – deployed separately, not needed for frontend build
+server/
+
+# Archive / scraper artefacts – not part of the React build
+offline-static-clone/
+xfa-clone.zip
+xfa-offline-static.zip
+
+# Legacy template / scaffold files
+original-index.html
+original-main.jsx
+original-header.jsx
+original-footer.jsx
+body-scripts.html
+head-tags.html
+
+# One-off utility scripts
+debug.cjs
+extract.cjs
+generateReactShell.cjs
