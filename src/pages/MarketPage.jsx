@@ -1,5 +1,5 @@
 ﻿import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ArrowUpCircle, ArrowDownCircle, RefreshCw, Search, Loader2 } from "lucide-react";
+import { ArrowUpCircle, ArrowDownCircle, RefreshCw, Search, Loader2, RotateCcw } from "lucide-react";
 import { Line } from "react-chartjs-2";
 import "../services/chartConfig";
 import { apiClient } from "../services/apiClient";
@@ -74,6 +74,7 @@ export function MarketPage() {
   const [assets, setAssets] = useState(fallbackCoins);
   const [loading, setLoading] = useState(false);
   const [query, setQuery] = useState("");
+  const [lastQuery, setLastQuery] = useState("");
   const [lastUpdated, setLastUpdated] = useState(null);
   const offlineNoticeLogged = useRef(false);
   const latestSnapshotRef = useRef(fallbackCoins);
@@ -533,11 +534,27 @@ export function MarketPage() {
             <Search className="pointer-events-none absolute inset-y-0 left-3 my-auto size-4 text-slate-500" />
             <input
               value={query}
-              onChange={(event) => setQuery(event.target.value)}
+              onChange={(event) => {
+                const next = event.target.value;
+                if (query.trim() && !next.trim()) {
+                  setLastQuery(query.trim());
+                }
+                setQuery(next);
+              }}
               placeholder="Search assets, e.g. BTC or Bitcoin"
               className="w-full rounded-full border border-white/10 bg-white/5 py-2 pl-10 pr-4 text-sm text-white placeholder:text-slate-500 focus:border-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500/40"
             />
           </div>
+          {lastQuery && !query.trim() && (
+            <button
+              onClick={() => setQuery(lastQuery)}
+              className="flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-slate-400 transition hover:border-blue-400/40 hover:text-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-500/40 whitespace-nowrap"
+              title={`Redo last search: "${lastQuery}"`}
+            >
+              <RotateCcw className="size-3" />
+              Redo last query
+            </button>
+          )}
           <p className="text-xs text-slate-500 text-center sm:text-right">
             Market prices sourced from CoinGecko and refresh automatically every 5 seconds. Last update {lastUpdatedLabel}.
           </p>
