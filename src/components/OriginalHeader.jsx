@@ -90,6 +90,29 @@ export default function OriginalHeader() {
                                     <li id="menu-item-605" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-605"><a href="/about#compliance">Compliance &amp; Disclosures</a></li>
                                 </ul>
                             </li>
+                            <li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-40"><a href="/services">Services</a>
+                                <ul class="sub-menu">
+                                    <li id="menu-item-647" class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="/services#markets">Equity Derivatives</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-649" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-649"><a href="/services#markets">Equity Options</a></li>
+                                            <li id="menu-item-648" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-648"><a href="/services#markets">Index Options</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-644" class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-644"><a href="/services#markets">Futures &amp; Futures Options</a>
+                                        <ul class="sub-menu">
+                                            <li id="menu-item-645" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-645"><a href="/services#markets">SOFR/Euro Dollar</a></li>
+                                            <li id="menu-item-646" class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-646"><a href="/services#markets">Futures &amp; Commodities</a></li>
+                                        </ul>
+                                    </li>
+                                    <li id="menu-item-293" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-293"><a href="/services#flex">FLEX Options-Meet FLEX-FA</a></li>
+                                    <li id="menu-item-294" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-294"><a href="/services#gth">Global Trading Hours</a></li>
+                                    <li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="/services#smart">XFA SMART</a></li>
+                                    <li id="menu-item-700" class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-700"><a href="/investments"><strong>Investment</strong></a></li>
+                                    <li id="menu-item-701" class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-701"><a href="/market"><strong>Trading</strong></a></li>
+                                    <li id="menu-item-702" class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-702"><a href="/dashboard"><strong>Portfolio</strong></a></li>
+                                    <li id="menu-item-703" class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-703"><a href="/platform"><strong>Orderly</strong></a></li>
+                                </ul>
+                            </li>
                             <li id="menu-item-641" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="/contact">News &amp; Updates</a></li>
                             <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-38"><a href="/contact">Contact Us</a></li>
                         </ul>
@@ -122,6 +145,29 @@ export default function OriginalHeader() {
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-628"><a href="/about#join-the-team">Join the team</a></li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-604"><a href="/about#faqs">FAQs</a></li>
                                         <li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-605"><a href="/about#compliance">Compliance &amp; Disclosures</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children columns-one-column alignment-left menu-item-40"><a href="/services">Services</a>
+                                    <ul class="sub-menu">
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-647"><a href="/services#markets">Equity Derivatives</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-649"><a href="/services#markets">Equity Options</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-648"><a href="/services#markets">Index Options</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-market menu-item-has-children columns-one-column alignment-left menu-item-644"><a href="/services#markets">Futures &amp; Futures Options</a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-645"><a href="/services#markets">SOFR/Euro Dollar</a></li>
+                                                <li class="menu-item menu-item-type-post_type menu-item-object-market columns-one-column alignment-left menu-item-646"><a href="/services#markets">Futures &amp; Commodities</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-293"><a href="/services#flex">FLEX Options-Meet FLEX-FA</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-294"><a href="/services#gth">Global Trading Hours</a></li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-service columns-one-column alignment-left menu-item-297"><a href="/services#smart">XFA SMART</a></li>
+                                        <li class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-700"><a href="/investments"><strong>Investment</strong></a></li>
+                                        <li class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-701"><a href="/market"><strong>Trading</strong></a></li>
+                                        <li class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-702"><a href="/dashboard"><strong>Portfolio</strong></a></li>
+                                        <li class="menu-item menu-item-type-custom columns-one-column alignment-left menu-item-703"><a href="/platform"><strong>Orderly</strong></a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page columns-one-column alignment-left menu-item-641"><a href="/contact">News &amp; Updates</a></li>
