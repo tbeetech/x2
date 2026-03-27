@@ -1,6 +1,11 @@
 import dotenv from "dotenv";
+import { fileURLToPath } from "url";
+import { dirname, resolve } from "path";
 
-dotenv.config();
+const __envDir = dirname(fileURLToPath(import.meta.url));
+// Load .env relative to this file so it works regardless of CWD
+// (server/src/config/ → ../../.env = server/.env)
+dotenv.config({ path: resolve(__envDir, "../../.env") });
 
 const DEFAULTS = {
   port: process.env.NODE_ENV === "production" ? 8080 : 5000,
