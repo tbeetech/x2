@@ -120,20 +120,18 @@ export function SignupPage() {
 
   if (success) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-slate-900 px-4">
-        <div className="w-full max-w-md text-center">
-          <CheckCircle2 className="mx-auto mb-4 size-16 text-emerald-400" />
-          <h1 className="text-2xl font-semibold text-white">Account Created!</h1>
-          <p className="mt-2 text-slate-400">
-            Redirecting you to your dashboard...
-          </p>
-        </div>
+      <div className="w-full max-w-md text-center mx-auto">
+        <CheckCircle2 className="mx-auto mb-4 size-16 text-emerald-400" />
+        <h1 className="text-2xl font-semibold text-white">Account Created!</h1>
+        <p className="mt-2 text-slate-400">
+          Redirecting you to your dashboard...
+        </p>
       </div>
     );
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-900 px-4">
+    <>
       <LoaderOverlay show={submitting} label="Creating your account..." />
 
       <div className="w-full max-w-md space-y-8">
@@ -376,6 +374,6 @@ export function SignupPage() {
           </Link>
         </p>
       </div>
-    </div>
+    </>
   );
 }

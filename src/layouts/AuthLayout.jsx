@@ -34,7 +34,7 @@ export function AuthLayout() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center px-6 py-10 md:px-16">
+      <div className="flex flex-col justify-center overflow-hidden px-6 py-10 md:px-16">
         <Link to="/" className="mb-10 flex items-center gap-2 text-white md:hidden">
           <div className="flex flex-col leading-none">
             <span className="text-xl font-black tracking-widest">XFA</span>

@@ -14,8 +14,9 @@
  * ... all other Invisphere app routes (MainLayout)
  */
 
-import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, Outlet, useLocation } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
+import { useEffect, useRef, useState } from 'react'
 import 'react-toastify/dist/ReactToastify.css'
 
 // XFA original shell
@@ -27,6 +28,7 @@ import Footer         from './components/Footer'
 import ConsentPrompt  from './components/ConsentPrompt'
 import Services       from './pages/Services'
 import AboutUs        from './pages/AboutUs'
+import { HourglassPreloader } from './components/HourglassPreloader'
 
 // Invisphere layouts
 import { MainLayout }  from './layouts/MainLayout'
@@ -71,6 +73,25 @@ function XFAShell() {
   )
 }
 
+/**
+ * Shows the hourglass preloader for a random 1–4 seconds on every
+ * route change (first visit + subsequent navigation).
+ */
+function PagePreloader() {
+  const location = useLocation();
+  const [show, setShow] = useState(true);
+  const timerRef = useRef(null);
+
+  useEffect(() => {
+    setShow(true);
+    const duration = Math.random() * 3000 + 1000; // 1 000 – 4 000 ms
+    timerRef.current = setTimeout(() => setShow(false), duration);
+    return () => clearTimeout(timerRef.current);
+  }, [location.pathname]);
+
+  return <HourglassPreloader show={show} />;
+}
+
 /** XFA inline contact page */
 function ContactPage() {
   return (
@@ -112,6 +133,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <PagePreloader />
         <Routes>
 
           {/* 
