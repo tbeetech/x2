@@ -64,7 +64,7 @@ export default function OriginalHeader() {
             <div class="header-inner">
 
                 <!-- Marex Logo -->
-                <a href="https://www.marex.com" id="marex-logo" title="Marex" target="_blank">
+                <a href="/" id="marex-logo" title="Marex">
                     <img class="logo-small" src="https://xfa.marex.com/wp-content/themes/marex-xfa/assets/img/marex-logo-icon.svg" alt="Marex Logo Icon">
                     <img class="logo-large" src="https://xfa.marex.com/wp-content/themes/marex-xfa/assets/img/marex-logo.svg" alt="Marex Logo">
                 </a>

@@ -62,38 +62,39 @@ export function LandingPage() {
   }, [topCryptos]);
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative w-full overflow-x-hidden">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.12),_transparent_55%)]" />
-      <section className="relative mx-auto flex max-w-6xl flex-col gap-10 px-6 pb-20 pt-8 text-white md:pt-12">
-        <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:items-center">
-          <div className="space-y-8">
+      {/* Hero */}
+      <section className="relative mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 pb-16 pt-8 text-white sm:px-6 md:pt-12">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-center">
+          <div className="space-y-6 sm:space-y-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/40 bg-blue-500/10 px-4 py-1 text-sm font-medium text-blue-200">
-              <Sparkles className="size-4" /> Quantum AI Assisted
+              <Sparkles className="size-4 shrink-0" /> Quantum AI Assisted
               Allocations
             </div>
-            <h1 className="text-4xl font-semibold leading-tight md:text-5xl lg:text-6xl">
+            <h1 className="text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
               Invest in the Future of{" "}
               <span className="text-gradient-primary">Digital Currency</span>
             </h1>
-            <p className="max-w-xl text-lg text-slate-300">
+            <p className="max-w-xl text-base text-slate-300 sm:text-lg">
               Join millions of investors building wealth with our secure platform and Quantum AI.
             </p>
-            <div className="flex flex-col gap-4 sm:flex-row">
+            <div className="flex flex-col gap-3 sm:flex-row">
               <Link
                 to="/signup"
-                className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:from-blue-400 hover:to-purple-500"
+                className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-600 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:from-blue-400 hover:to-purple-500"
               >
                 Get Started
                 <ArrowRight className="ml-2 size-4" />
               </Link>
               <Link
                 to="/learn"
-                className="inline-flex items-center justify-center rounded-full border border-white/20 px-8 py-3 text-sm font-semibold text-slate-200 transition hover:border-blue-400 hover:text-blue-300"
+                className="inline-flex items-center justify-center rounded-full border border-white/20 px-7 py-3 text-sm font-semibold text-slate-200 transition hover:border-blue-400 hover:text-blue-300"
               >
                 Learn More
               </Link>
             </div>
-            <dl className="grid gap-6 sm:grid-cols-3">
+            <dl className="grid gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-glass backdrop-blur">
                 <dt className="text-xs uppercase tracking-wide text-slate-400">
                   Total Market Cap
@@ -115,26 +116,26 @@ export function LandingPage() {
                   Active Assets
                 </dt>
                 <dd className="mt-2 text-xl font-semibold text-white">
-                  {loading ? "Loading..." : globalStats.active_cryptocurrencies.toLocaleString()}{/*  */}
+                  {loading ? "Loading..." : globalStats.active_cryptocurrencies.toLocaleString()}
                 </dd>
               </div>
             </dl>
           </div>
-          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/80 via-slate-950/70 to-slate-900/60 p-6 shadow-xl backdrop-blur-xl">
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/80 via-slate-950/70 to-slate-900/60 p-4 shadow-xl backdrop-blur-xl sm:p-6">
             <div className="flex items-center justify-between">
               <span className="text-sm font-medium text-slate-300">
                 Live Market Overview
               </span>
-              <TrendingUp className="size-5 text-emerald-400" />
+              <TrendingUp className="size-5 text-emerald-400 shrink-0" />
             </div>
-            <div className="mt-6 space-y-6">
+            <div className="mt-6 space-y-4">
               {topCryptos.slice(0, 3).map((coin) => (
                 <div
                   key={coin.id}
-                  className="flex items-center justify-between rounded-xl border border-white/5 bg-white/5 px-5 py-4"
+                  className="flex items-center justify-between rounded-xl border border-white/5 bg-white/5 px-4 py-3 sm:px-5 sm:py-4"
                 >
-                  <div>
-                    <p className="text-sm font-semibold text-white">
+                  <div className="min-w-0 mr-2">
+                    <p className="text-sm font-semibold text-white truncate">
                       {coin.name}
                       <span className="ml-2 rounded-full bg-white/10 px-2 py-0.5 text-xs font-medium text-slate-300">
                         {coin.symbol.toUpperCase()}
@@ -142,7 +143,7 @@ export function LandingPage() {
                     </p>
                     <p className="text-xs text-slate-400">Market Cap</p>
                   </div>
-                  <div className="text-right">
+                  <div className="text-right shrink-0">
                     <p className="text-sm font-semibold text-white">
                       {formatCurrency(coin.current_price)}
                     </p>
@@ -159,13 +160,13 @@ export function LandingPage() {
                 </div>
               ))}
             </div>
-            <div className="mt-8 grid gap-4 text-sm">
+            <div className="mt-6 grid gap-3 text-sm">
               <div className="flex items-center gap-3 rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-4 py-3 text-emerald-200">
-                <ShieldCheck className="size-5" />
+                <ShieldCheck className="size-5 shrink-0" />
                 Institutional grade security & compliance
               </div>
               <div className="flex items-center gap-3 rounded-xl border border-blue-500/30 bg-blue-500/10 px-4 py-3 text-blue-200">
-                <Wallet className="size-5" />
+                <Wallet className="size-5 shrink-0" />
                 Automated multi-wallet monitoring
               </div>
             </div>
@@ -173,18 +174,19 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section className="relative mx-auto max-w-6xl px-6 pb-20">
+      {/* Market intelligence */}
+      <section className="relative mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6">
         <div className="flex flex-wrap items-center justify-between gap-4 pb-6">
-          <h2 className="text-2xl font-semibold text-white sm:text-3xl">
+          <h2 className="text-xl font-semibold text-white sm:text-2xl md:text-3xl">
             Live market intelligence
           </h2>
-          <div className="flex gap-2 rounded-full border border-white/10 bg-white/5 p-1 text-sm font-medium text-slate-300">
+          <div className="flex gap-1 rounded-full border border-white/10 bg-white/5 p-1 text-sm font-medium text-slate-300">
             {timeframes.map((value) => (
               <button
                 key={value}
                 type="button"
                 onClick={() => setTimeframe(value)}
-                className={`rounded-full px-4 py-1 transition ${
+                className={`rounded-full px-3 py-1 transition sm:px-4 ${
                   value === timeframe ? "bg-blue-500 text-white" : "hover:bg-white/10"
                 }`}
               >
@@ -195,22 +197,23 @@ export function LandingPage() {
         </div>
 
         <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg shadow-blue-900/10 backdrop-blur">
-            <div className="overflow-x-auto">
-              <table className="min-w-full text-left text-sm text-slate-300">
+          <div className="min-w-0 rounded-2xl border border-white/10 bg-white/5 p-4 shadow-lg shadow-blue-900/10 backdrop-blur sm:p-6">
+            <div className="overflow-x-auto -mx-1 px-1">
+              {/* -mx-1 px-1 extends the scrollable area to the card edges on mobile */}
+              <table className="w-full text-left text-sm text-slate-300 min-w-[480px]">
                 <thead className="text-xs uppercase tracking-wider text-slate-500">
                   <tr>
-                    <th className="pb-3">Asset</th>
-                    <th className="pb-3">Price</th>
-                    <th className="pb-3">24h Change</th>
-                    <th className="pb-3">24h Volume</th>
+                    <th className="pb-3 pr-4">Asset</th>
+                    <th className="pb-3 pr-4">Price</th>
+                    <th className="pb-3 pr-4">24h Change</th>
+                    <th className="pb-3 pr-4 hidden sm:table-cell">24h Volume</th>
                     <th className="pb-3">Market Cap</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/5">
                   {topCryptos.map((coin) => (
                     <tr key={coin.id} className="transition hover:bg-white/5">
-                      <td className="py-3">
+                      <td className="py-3 pr-4">
                         <div>
                           <p className="font-medium text-white">{coin.name}</p>
                           <p className="text-xs text-slate-400">
@@ -218,9 +221,9 @@ export function LandingPage() {
                           </p>
                         </div>
                       </td>
-                      <td className="py-3">{formatCurrency(coin.current_price)}</td>
+                      <td className="py-3 pr-4">{formatCurrency(coin.current_price)}</td>
                       <td
-                        className={`py-3 font-medium ${
+                        className={`py-3 pr-4 font-medium ${
                           coin.price_change_percentage_24h >= 0
                             ? "text-emerald-400"
                             : "text-rose-400"
@@ -228,7 +231,7 @@ export function LandingPage() {
                       >
                         {coin.price_change_percentage_24h?.toFixed(2)}%
                       </td>
-                      <td className="py-3">{formatCurrency(coin.total_volume)}</td>
+                      <td className="py-3 pr-4 hidden sm:table-cell">{formatCurrency(coin.total_volume)}</td>
                       <td className="py-3">{formatCurrency(coin.market_cap)}</td>
                     </tr>
                   ))}
@@ -238,19 +241,23 @@ export function LandingPage() {
           </div>
 
           <div className="space-y-6">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg backdrop-blur">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-lg backdrop-blur sm:p-6">
               <h3 className="text-sm font-semibold text-white">
                 Market capitalisation share
               </h3>
-              <div className="mt-4 h-56">
+              <div className="relative mt-4 h-52 sm:h-56">
                 <Doughnut
                   data={marketCapChart}
                   options={{
+                    responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                       legend: {
                         position: "bottom",
                         labels: {
                           color: "rgba(226,232,240,0.8)",
+                          boxWidth: 12,
+                          font: { size: 11 },
                         },
                       },
                     },
@@ -258,24 +265,26 @@ export function LandingPage() {
                 />
               </div>
             </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg backdrop-blur">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-lg backdrop-blur sm:p-6">
               <h3 className="text-sm font-semibold text-white">
                 24h performance snapshot
               </h3>
-              <div className="mt-4 h-56">
+              <div className="relative mt-4 h-52 sm:h-56">
                 <Bar
                   data={priceChangeChart}
                   options={{
+                    responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                       legend: { display: false },
                     },
                     scales: {
                       x: {
-                        ticks: { color: "rgba(148,163,184,0.7)" },
+                        ticks: { color: "rgba(148,163,184,0.7)", font: { size: 10 } },
                         grid: { color: "rgba(148,163,184,0.1)" },
                       },
                       y: {
-                        ticks: { color: "rgba(148,163,184,0.7)" },
+                        ticks: { color: "rgba(148,163,184,0.7)", font: { size: 10 } },
                         grid: { color: "rgba(148,163,184,0.1)" },
                       },
                     },
@@ -287,8 +296,9 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section className="relative mx-auto max-w-6xl px-6 pb-24">
-        <div className="grid gap-6 md:grid-cols-3">
+      {/* Features */}
+      <section className="relative mx-auto w-full max-w-6xl px-4 pb-16 sm:px-6">
+        <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 md:grid-cols-3">
           {[
             {
               title: "Unified portfolio intelligence",
@@ -311,10 +321,10 @@ export function LandingPage() {
           ].map((feature) => (
             <div
               key={feature.title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg backdrop-blur"
+              className="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-lg backdrop-blur sm:p-6"
             >
               <feature.icon className="size-10 rounded-xl bg-blue-500/10 p-2 text-blue-300" />
-              <h3 className="mt-4 text-lg font-semibold text-white">
+              <h3 className="mt-4 text-base font-semibold text-white sm:text-lg">
                 {feature.title}
               </h3>
               <p className="mt-2 text-sm text-slate-300">{feature.description}</p>
@@ -323,14 +333,15 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section className="relative mx-auto max-w-5xl px-6 pb-24">
-        <div className="rounded-3xl border border-blue-500/40 bg-gradient-to-r from-blue-600/30 via-blue-500/20 to-purple-600/30 p-10 text-white shadow-2xl shadow-blue-600/20 backdrop-blur">
+      {/* CTA */}
+      <section className="relative mx-auto w-full max-w-5xl px-4 pb-16 sm:px-6 sm:pb-24">
+        <div className="rounded-3xl border border-blue-500/40 bg-gradient-to-r from-blue-600/30 via-blue-500/20 to-purple-600/30 p-6 text-white shadow-2xl shadow-blue-600/20 backdrop-blur sm:p-8 md:p-10">
           <div className="grid gap-6 md:grid-cols-[1.4fr_1fr] md:items-center">
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               <p className="text-sm uppercase tracking-[0.35em] text-blue-200">
                 Ready to invest smarter?
               </p>
-              <h2 className="text-3xl font-semibold">
+              <h2 className="text-2xl font-semibold sm:text-3xl">
                 Launch your XFA workspace in minutes.
               </h2>
               <p className="text-sm text-blue-100">

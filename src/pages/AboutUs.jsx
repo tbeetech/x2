@@ -177,9 +177,7 @@ export default function AboutUs() {
           <h2>Join the Team</h2>
           <p>View and apply for vacancies across the Marex group.</p>
           <a
-            href="https://www.marex.com/careers/"
-            target="_blank"
-            rel="noreferrer"
+            href="/contact"
             className="cta-btn"
           >
             See Current Vacancies →
@@ -196,9 +194,7 @@ export default function AboutUs() {
             policy, and terms of use are maintained on the Marex website.
           </p>
           <a
-            href="https://www.marex.com/privacy-policy/"
-            target="_blank"
-            rel="noreferrer"
+            href="/about#compliance"
             className="cta-btn"
           >
             View Compliance Docs →

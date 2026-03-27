@@ -102,9 +102,7 @@ function ContactPage() {
         Email info@x-fa.com
       </a>
       <p style={{ color: '#6b7280', fontSize: '0.8rem' }}>
-        XFA is a division of{' '}
-        <a href="https://www.marex.com/" target="_blank" rel="noreferrer"
-          style={{ color: '#1a5ea8' }}>Marex</a>
+        XFA is a division of Marex
       </p>
     </section>
   )

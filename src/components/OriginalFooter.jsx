@@ -9,7 +9,7 @@ export default function OriginalFooter() {
         <div class="footer-inner">
 
             <!-- Footer Logo -->
-            <a href="https://www.marex.com" id="footer-logo" title="Marex" target="_blank">
+            <a href="/" id="footer-logo" title="Marex">
                 <img src="https://xfa.marex.com/wp-content/themes/marex-xfa/assets/img/footer-logo.svg" alt="Marex Logo">
                 <small>XFA is a division of Marex</small>
             </a>
@@ -23,11 +23,11 @@ export default function OriginalFooter() {
                     <ul class="footer-menu">
                         <li id="menu-item-274" class="menu-item menu-item-type-post_type menu-item-object-page columns- alignment- menu-item-274"><a href="/about#faqs">FAQs</a></li>
                         <li id="menu-item-273" class="menu-item menu-item-type-post_type menu-item-object-page columns- alignment- menu-item-273"><a href="/about#compliance">Compliance &amp; Disclosures</a></li>
-                        <li id="menu-item-276" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-276"><a href="https://www.marex.com/modern-slavery-statement/" target="_blank" rel="noopener">Modern Slavery Statement</a></li>
-                        <li id="menu-item-277" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-277"><a href="https://www.marex.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></li>
-                        <li id="menu-item-278" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-278"><a href="https://www.marex.com/terms-of-use/" target="_blank" rel="noopener">Terms of Use</a></li>
-                        <li id="menu-item-279" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-279"><a href="https://www.marex.com/services-terms-and-conditions/" target="_blank" rel="noopener">Services T&amp;C</a></li>
-                        <li id="menu-item-284" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-284"><a href="https://www.marex.com/cookie-policy/" target="_blank" rel="noopener">Cookie Policy</a></li>
+                        <li id="menu-item-276" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-276"><a href="/about#compliance">Modern Slavery Statement</a></li>
+                        <li id="menu-item-277" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-277"><a href="/about#compliance">Privacy Policy</a></li>
+                        <li id="menu-item-278" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-278"><a href="/about#compliance">Terms of Use</a></li>
+                        <li id="menu-item-279" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-279"><a href="/about#compliance">Services T&amp;C</a></li>
+                        <li id="menu-item-284" class="menu-item menu-item-type-custom menu-item-object-custom columns- alignment- menu-item-284"><a href="/about#compliance">Cookie Policy</a></li>
                     </ul>
                 </nav>
 

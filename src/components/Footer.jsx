@@ -45,24 +45,24 @@ export default function Footer() {
           <h3>Legal</h3>
           <ul>
             <li>
-              <a href="https://www.marex.com/modern-slavery-statement/" target="_blank" rel="noreferrer">
+              <Link to="/about#compliance">
                 Modern Slavery Statement
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.marex.com/privacy-policy/" target="_blank" rel="noreferrer">
+              <Link to="/about#compliance">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.marex.com/terms-of-use/" target="_blank" rel="noreferrer">
+              <Link to="/about#compliance">
                 Terms of Use
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.marex.com/cookie-policy/" target="_blank" rel="noreferrer">
+              <Link to="/about#compliance">
                 Cookie Policy
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -70,9 +70,9 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <p>© Marex {new Date().getFullYear()}. All rights reserved.</p>
-        <a href="https://www.marex.com/" target="_blank" rel="noreferrer" className="footer__marex">
+        <Link to="/" className="footer__marex">
           xfa.marex.com
-        </a>
+        </Link>
       </div>
     </footer>
   )
