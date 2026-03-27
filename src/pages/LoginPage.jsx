@@ -85,7 +85,7 @@ export function LoginPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-900 px-4">
+    <>
       <LoaderOverlay show={loading} label="Signing in…" />
 
       <div className="w-full max-w-md space-y-8">
@@ -226,7 +226,7 @@ export function LoginPage() {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

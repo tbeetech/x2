@@ -11,6 +11,22 @@
   --blue-lgt:   #2d79d1;
   --white:      #ffffff;
   --font:       "Inter", "Helvetica Neue", Arial, sans-serif;
+
+  /* Fallback values for variables defined in the external Marex theme CSS */
+  --off-white:  #f4f6f9;
+  --gray:       #6b7280;
+  --gray-light: #e5e7eb;
+  --text:       #374151;
+}
+
+/* ── Fix: ensure all form controls respect their declared width (Tailwind
+   Preflight is disabled to preserve the XFA homepage styles, so we
+   manually apply border-box only to form elements) ── */
+input,
+select,
+textarea,
+button {
+  box-sizing: border-box;
 }
 
 /* Styles isolated for secondary pages. Marex original CSS handles the homepage. */
