@@ -113,7 +113,7 @@ export default function Navbar() {
                   >
                     {link.label}{' '}
                     <span className="caret">
-                      {openDrop === link.label ? '&#9650;' : '&#9660;'}
+                      {openDrop === link.label ? '▲' : '▼'}
                     </span>
                   </button>
                   {openDrop === link.label && (
