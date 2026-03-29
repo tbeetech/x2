@@ -202,4 +202,17 @@ export const sampleVerificationTimeline = [
   },
 ];
 
-export const sampleUserStore = [sampleUser];
+// NOTE: This account is used only when USE_SAMPLE_DATA is active (development/demo mode).
+// It is never reachable in production where USE_SAMPLE_DATA defaults to false.
+export const sampleAdminUser = {
+  id: "admin-1",
+  email: "admin@invisphere.com",
+  firstName: "Admin",
+  lastName: "User",
+  role: "admin",
+  membership: "Admin",
+  password: "admin123",
+  createdAt: new Date("2024-01-01T00:00:00Z").toISOString(),
+};
+
+export const sampleUserStore = [sampleUser, sampleAdminUser];
