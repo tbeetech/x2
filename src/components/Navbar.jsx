@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+﻿import { useState, useRef, useCallback } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import './Navbar.css'
 
@@ -40,6 +40,16 @@ const navLinks = [
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [openDrop, setOpenDrop] = useState(null)
+  const leaveTimer = useRef(null)
+
+  const handleMouseEnter = useCallback((label) => {
+    clearTimeout(leaveTimer.current)
+    setOpenDrop(label)
+  }, [])
+
+  const handleMouseLeave = useCallback(() => {
+    leaveTimer.current = setTimeout(() => setOpenDrop(null), 120)
+  }, [])
 
   const toggleDrop = (label) =>
     setOpenDrop((prev) => (prev === label ? null : label))
@@ -60,8 +70,8 @@ export default function Navbar() {
               <div
                 key={link.label}
                 className="navbar__item navbar__item--drop"
-                onMouseEnter={() => setOpenDrop(link.label)}
-                onMouseLeave={() => setOpenDrop(null)}
+                onMouseEnter={() => handleMouseEnter(link.label)}
+                onMouseLeave={handleMouseLeave}
               >
                 <NavLink to={link.to} className={({ isActive }) => isActive ? 'active' : ''}>
                   {link.label} <span className="caret">&#9662;</span>
