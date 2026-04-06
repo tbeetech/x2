@@ -29,12 +29,17 @@ export async function seedAdmin(options = {}) {
     if (usingSampleData) {
       const { sampleUserStore } = await import("../data/sample.js");
 
-      // Ensure the env-configured admin exists
+      // Ensure the env-configured admin exists in the in-memory store.
       const envAdminExists = sampleUserStore.some(
         (u) => u.email.toLowerCase() === adminEmail.toLowerCase(),
       );
       if (!envAdminExists) {
-        const hash = await bcrypt.hash(adminPassword, 8);
+        const passwordHash = await bcrypt.hash(adminPassword, 8);
+        // NOTE: The `password` field (plaintext) is intentionally kept here for
+        // sample/demo mode only. `resolveUserByEmail` in dataService.js hashes it
+        // via `bcrypt.hash(match.password, 8)` on every lookup — this is the
+        // established pattern for in-memory sample users and never applies to
+        // MongoDB (production) mode where only `passwordHash` is stored.
         sampleUserStore.push({
           id: `user-${sampleUserStore.length + 1}`,
           email: adminEmail,
@@ -43,15 +48,17 @@ export async function seedAdmin(options = {}) {
           role: "admin",
           membership: "Administrator",
           password: adminPassword,
-          passwordHash: hash,
+          passwordHash,
           createdAt: new Date().toISOString(),
         });
         console.log(`[seedAdmin] Seeded sample admin user: ${adminEmail}`);
       }
 
-      // Also sync the password of the built-in sampleAdminUser entry in case the
-      // env credentials differ from its hardcoded defaults (keeps all admin entries
-      // up-to-date across restarts).
+      // Sync the password of the matching entry when env credentials differ from
+      // the hardcoded defaults in sampleAdminUser (keeps all admin entries
+      // up-to-date across restarts without duplicating the user).
+      // NOTE: Same sample-mode-only pattern as above — plaintext is needed by
+      // resolveUserByEmail; it is never persisted to MongoDB.
       const builtInEntry = sampleUserStore.find(
         (u) => u.email.toLowerCase() === adminEmail.toLowerCase(),
       );
@@ -62,7 +69,7 @@ export async function seedAdmin(options = {}) {
         console.log(`[seedAdmin] Updated password for admin user: ${adminEmail}`);
       }
     } else {
-      // MongoDB mode — upsert by email so duplicate admin users are never created.
+      // MongoDB mode — only the bcrypt hash is stored; no plaintext password.
       const existing = await UserModel.findOne({ email: adminEmail }).exec();
       if (!existing) {
         const passwordHash = await bcrypt.hash(adminPassword, 10);

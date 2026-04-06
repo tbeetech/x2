@@ -206,6 +206,10 @@ export const sampleVerificationTimeline = [
 // It is never reachable in production where USE_SAMPLE_DATA defaults to false.
 // Email and password match the ADMIN_EMAIL / ADMIN_PASSWORD values in server/.env
 // so that all environments (local dev, Vercel, Render) accept the same admin credentials.
+//
+// The `password` field (plaintext) is required by resolveUserByEmail in dataService.js
+// which re-hashes it via bcrypt on every lookup — this is the established sample-data
+// pattern and only ever runs in non-production mode. MongoDB mode stores only a hash.
 export const sampleAdminUser = {
   id: "admin-1",
   email: "admin@x-fa.com",
