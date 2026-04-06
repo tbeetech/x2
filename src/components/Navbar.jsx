@@ -1,4 +1,4 @@
-﻿import { useState, useRef, useCallback } from 'react'
+﻿import { useState, useRef, useCallback, useEffect } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import './Navbar.css'
 
@@ -49,6 +49,10 @@ export default function Navbar() {
 
   const handleMouseLeave = useCallback(() => {
     leaveTimer.current = setTimeout(() => setOpenDrop(null), 120)
+  }, [])
+
+  useEffect(() => {
+    return () => clearTimeout(leaveTimer.current)
   }, [])
 
   const toggleDrop = (label) =>
