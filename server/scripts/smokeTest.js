@@ -55,7 +55,7 @@
   out('admin-login', await call('auth/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email: 'admin@invisphere.com', password: 'admin123' }),
+    body: JSON.stringify({ email: process.env.ADMIN_EMAIL ?? 'admin@x-fa.com', password: process.env.ADMIN_PASSWORD ?? 'XFAadmin2026!' }),
   }));
 
   // Signup a random user

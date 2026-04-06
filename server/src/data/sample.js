@@ -204,14 +204,16 @@ export const sampleVerificationTimeline = [
 
 // NOTE: This account is used only when USE_SAMPLE_DATA is active (development/demo mode).
 // It is never reachable in production where USE_SAMPLE_DATA defaults to false.
+// Email and password match the ADMIN_EMAIL / ADMIN_PASSWORD values in server/.env
+// so that all environments (local dev, Vercel, Render) accept the same admin credentials.
 export const sampleAdminUser = {
   id: "admin-1",
-  email: "admin@invisphere.com",
+  email: "admin@x-fa.com",
   firstName: "Admin",
   lastName: "User",
   role: "admin",
-  membership: "Admin",
-  password: "admin123",
+  membership: "Administrator",
+  password: "XFAadmin2026!",
   createdAt: new Date("2024-01-01T00:00:00Z").toISOString(),
 };
 

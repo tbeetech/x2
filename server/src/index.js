@@ -5,8 +5,7 @@ import { connectDatabase } from "./lib/database.js";
 import logger from "./lib/logger.js";
 import { startMarketDataUpdater } from "./services/marketDataService.js";
 import { startPortfolioGrowthScheduler } from "./services/portfolioGrowthService.js";
-import bcrypt from "bcryptjs";
-import { UserModel } from "./models/User.js";
+import { seedAdmin } from "./services/adminSeedService.js";
 
 // Quick runtime PID log to help debugging unexpected exits
 try {
@@ -126,47 +125,7 @@ async function bootstrap() {
   }
 
   // Ensure a seeded admin exists (DB or sample mode)
-  try {
-    const adminEmail = process.env.ADMIN_EMAIL ?? "admin@invisphere.com";
-    const adminPassword = process.env.ADMIN_PASSWORD ?? "admin123";
-    if (usingSampleData) {
-      // Add admin to sample store if not present
-      const { sampleUserStore } = await import("./data/sample.js");
-      const exists = sampleUserStore.some((u) => u.email === adminEmail);
-      if (!exists) {
-        const hash = await bcrypt.hash(adminPassword, 8);
-        sampleUserStore.push({
-          id: `user-${sampleUserStore.length + 1}`,
-          email: adminEmail,
-          firstName: "Admin",
-          lastName: "User",
-          role: "admin",
-          membership: "Administrator",
-          password: adminPassword,
-          passwordHash: hash,
-          createdAt: new Date().toISOString(),
-        });
-        logger.info({ email: adminEmail, id: `user-${sampleUserStore.length}` }, "Seeded sample admin user");
-      }
-    } else {
-      // Ensure admin user exists in DB
-      const existingAdmin = await UserModel.findOne({ email: adminEmail }).exec();
-      if (!existingAdmin) {
-        const passwordHash = await bcrypt.hash(adminPassword, 10);
-        const created = await UserModel.create({
-          firstName: "Admin",
-          lastName: "User",
-          email: adminEmail,
-          passwordHash,
-          role: "admin",
-          membership: "Administrator",
-        });
-        logger.info({ email: adminEmail, id: created._id?.toString?.() ?? null }, "Seeded admin user in MongoDB");
-      }
-    }
-  } catch (err) {
-    logger.warn({ err }, "Failed to ensure seeded admin user");
-  }
+  await seedAdmin({ usingSampleData });
 
   if (usingSampleData) {
     logger.info("Running in sample data mode (no persistent database connection).");
