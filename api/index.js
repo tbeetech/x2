@@ -11,13 +11,16 @@
 import { createServer } from "../server/src/server.js";
 import { connectDatabase } from "../server/src/lib/database.js";
 import { env } from "../server/src/config/env.js";
+import { seedAdmin } from "../server/src/services/adminSeedService.js";
 
 let cachedApp = null;
 
 async function buildApp() {
   if (cachedApp) return cachedApp;
 
-  if (!env.useSampleData) {
+  let usingSampleData = env.useSampleData;
+
+  if (!usingSampleData) {
     try {
       await connectDatabase();
       console.log("[api] MongoDB connected");
@@ -25,8 +28,14 @@ async function buildApp() {
       console.error("[api] MongoDB connection failed, falling back to sample data:", err.message);
       // Mirror the fallback pattern used in server/src/index.js bootstrap()
       env.useSampleData = true;
+      usingSampleData = true;
     }
   }
+
+  // Ensure the admin user exists in whatever data store is active.
+  // This mirrors the bootstrap() logic in server/src/index.js so that
+  // Vercel serverless deployments behave identically to a standalone server.
+  await seedAdmin({ usingSampleData });
 
   const { app } = createServer();
   cachedApp = app;

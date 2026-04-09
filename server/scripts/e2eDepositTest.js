@@ -159,13 +159,13 @@ async function runE2ETest() {
   }
 
   // Step 4: Admin Login
-  log('STEP 4: Admin Login', { email: 'admin@invisphere.com' });
+  log('STEP 4: Admin Login', { email: process.env.ADMIN_EMAIL ?? 'admin@x-fa.com' });
   const adminLoginRes = await apiCall('auth/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      email: 'admin@invisphere.com',
-      password: 'admin123',
+      email: process.env.ADMIN_EMAIL ?? 'admin@x-fa.com',
+      password: process.env.ADMIN_PASSWORD ?? 'XFAadmin2026!',
     }),
   });
 
