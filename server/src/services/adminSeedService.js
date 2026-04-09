@@ -82,6 +82,12 @@ export async function seedAdmin(options = {}) {
           membership: "Administrator",
         });
         console.log(`[seedAdmin] Seeded MongoDB admin user: ${adminEmail}`);
+      } else {
+        // Ensure existing admin has up-to-date password hash and role
+        const passwordHash = await bcrypt.hash(adminPassword, 10);
+        const updates = { passwordHash, role: "admin" };
+        await UserModel.updateOne({ _id: existing._id }, { $set: updates }).exec();
+        console.log(`[seedAdmin] Updated password for MongoDB admin user: ${adminEmail}`);
       }
     }
   } catch (err) {

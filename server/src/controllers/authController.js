@@ -152,8 +152,11 @@ export async function login(req, res) {
     return res.status(400).json({ error: "Email and password required." });
   }
 
+  // Normalize email to lowercase to handle mobile auto-capitalization
+  const normalizedEmail = email.trim().toLowerCase();
+
   try {
-    const user = await resolveUserByEmail(email);
+    const user = await resolveUserByEmail(normalizedEmail);
     if (!user) {
       return res.status(401).json({ error: "Invalid email or password." });
     }

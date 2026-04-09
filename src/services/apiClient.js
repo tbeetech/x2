@@ -625,7 +625,7 @@ const DEFAULT_STATE = (() => {
     {
       id: "admin-1",
       email: "admin@x-fa.com",
-      password: "admin123",
+      password: "XFAadmin2026!",
       firstName: "Alex",
       lastName: "Hayes",
       country: "Switzerland",

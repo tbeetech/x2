@@ -137,7 +137,7 @@ export async function resolveUserByEmail(email) {
     return mapSampleUser(normalized);
   }
 
-  return UserModel.findOne({ email }).exec();
+  return UserModel.findOne({ email: email.toLowerCase() }).exec();
 }
 
 export async function createUser(payload) {

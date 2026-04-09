@@ -8,8 +8,8 @@ Prerequisites
 - If you want MongoDB mode: a MongoDB URI and env var `MONGO_URI`
 
 Seeded admin
-- Email: admin@invisphere.com
-- Password: admin123
+- Email: admin@x-fa.com
+- Password: XFAadmin2026!
 - You can override with environment variables: `ADMIN_EMAIL` and `ADMIN_PASSWORD` before starting the server.
 
 Run server (development)
@@ -36,7 +36,7 @@ Invoke-RestMethod -Uri "http://localhost:PORT/api/auth/signup" -Method Post -Con
 Invoke-RestMethod -Uri "http://localhost:PORT/api/auth/login" -Method Post -ContentType 'application/json' -Body '{"email":"test1@local","password":"Abc!2345"}'
 
 # Login (admin)
-Invoke-RestMethod -Uri "http://localhost:PORT/api/auth/login" -Method Post -ContentType 'application/json' -Body '{"email":"admin@invisphere.com","password":"admin123"}'
+Invoke-RestMethod -Uri "http://localhost:PORT/api/auth/login" -Method Post -ContentType 'application/json' -Body '{"email":"admin@x-fa.com","password":"XFAadmin2026!"}'
 
 # Fetch admin overview (use token returned from login)
 # Example with token in header (PowerShell)
