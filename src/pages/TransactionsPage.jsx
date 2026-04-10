@@ -183,7 +183,7 @@ export function TransactionsPage() {
             <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:justify-end">
               <button
                 type="button"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs font-semibold text-slate-200 transition hover:bg-white/10"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-600/50 bg-slate-800/60 px-4 py-2 text-xs font-semibold text-slate-200 transition hover:bg-slate-700/70 hover:text-white"
                 onClick={() => window.print()}
               >
                 <Printer className="size-4" />

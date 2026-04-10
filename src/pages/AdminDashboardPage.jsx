@@ -441,7 +441,7 @@ export function AdminDashboardPage() {
             <h2 className="text-lg font-semibold text-white min-w-0 truncate">Pending client instructions</h2>
             <button
               type="button"
-              className="inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300 transition hover:bg-white/10 shrink-0"
+              className="inline-flex items-center gap-2 rounded-full border border-slate-600/50 bg-slate-800/60 px-3 py-1 text-xs text-slate-200 transition hover:bg-slate-700/60 hover:text-white shrink-0"
               onClick={async () => {
                 if (!adminActions) return;
                 setLoading(true);
@@ -549,7 +549,7 @@ export function AdminDashboardPage() {
               <h2 className="text-lg font-semibold text-white truncate">Verification queue</h2>
               <button
                 onClick={() => toggleSection('verificationQueue')}
-                className="rounded-full p-2 transition hover:bg-white/10 shrink-0"
+                className="rounded-full border border-slate-600/50 bg-slate-800/50 p-2 transition hover:bg-slate-700/60 shrink-0"
               >
                 {collapsedSections.verificationQueue ? (
                   <ChevronDown className="size-5 text-slate-400" />
@@ -633,7 +633,7 @@ export function AdminDashboardPage() {
               </div>
               <button
                 onClick={() => toggleSection('approvedVerifications')}
-                className="rounded-full p-2 transition hover:bg-white/10 shrink-0"
+                className="rounded-full border border-slate-600/50 bg-slate-800/50 p-2 transition hover:bg-slate-700/60 shrink-0"
               >
                 {collapsedSections.approvedVerifications ? (
                   <ChevronDown className="size-5 text-slate-400" />
@@ -689,7 +689,7 @@ export function AdminDashboardPage() {
                             </select>
                             <button
                               type="button"
-                              className="inline-flex items-center gap-1 rounded-full border border-white/10 px-3 py-1 text-xs font-semibold text-slate-200 transition hover:bg-white/10 min-h-[32px] shrink-0"
+                              className="inline-flex items-center gap-1 rounded-full border border-purple-500/30 bg-purple-950/60 px-3 py-1 text-xs font-semibold text-white transition hover:bg-purple-900/70 hover:border-purple-400/50 min-h-[32px] shrink-0 backdrop-blur-sm"
                               onClick={() => startEditing(record)}
                             >
                               View profile
@@ -743,7 +743,7 @@ export function AdminDashboardPage() {
             <h2 className="text-lg font-semibold text-white truncate">Client accounts</h2>
             <button
               onClick={() => toggleSection('clientAccounts')}
-              className="rounded-full p-2 transition hover:bg-white/10 shrink-0"
+              className="rounded-full border border-slate-600/50 bg-slate-800/50 p-2 transition hover:bg-slate-700/60 shrink-0"
             >
               {collapsedSections.clientAccounts ? (
                 <ChevronDown className="size-5 text-slate-400" />
@@ -897,7 +897,7 @@ export function AdminDashboardPage() {
               <h3 className="text-lg font-semibold text-white truncate">Edit {editingUser.name}</h3>
               <button
                 type="button"
-                className="rounded-full border border-white/10 p-2 text-white transition hover:bg-white/10 shrink-0"
+                className="rounded-full border border-slate-600/50 bg-slate-700/50 p-2 text-slate-300 transition hover:bg-slate-600/70 hover:text-white shrink-0"
                 onClick={() => setEditingUser(null)}
               >
                 <XCircle className="size-4" />
@@ -959,7 +959,7 @@ export function AdminDashboardPage() {
               <button
                 type="button"
                 onClick={() => setEditingUser(null)}
-                className="rounded-full border border-white/10 px-4 py-2 text-slate-200 transition hover:bg-white/10 min-h-[40px]"
+                className="rounded-full border border-slate-600/50 bg-slate-800/60 px-4 py-2 text-slate-200 transition hover:bg-slate-700/60 hover:text-white min-h-[40px]"
               >
                 Cancel
               </button>
@@ -985,7 +985,7 @@ export function AdminDashboardPage() {
               <button
                 type="button"
                 onClick={() => setDocumentsModal(null)}
-                className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-200 transition hover:border-blue-400/40 hover:text-blue-200 shrink-0"
+                className="rounded-full border border-slate-600/50 bg-slate-800/60 px-3 py-1 text-xs text-slate-200 transition hover:bg-slate-700/60 hover:text-white shrink-0"
               >
                 Close
               </button>
