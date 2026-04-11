@@ -165,7 +165,7 @@ export function DashboardPage() {
             <button
               type="button"
               onClick={() => navigate("/transactions/new?type=withdraw")}
-              className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10 sm:flex-initial sm:px-5 sm:text-base"
+              className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-white/20 bg-slate-700/50 px-4 py-3 text-sm font-semibold text-white transition hover:bg-slate-600/60 sm:flex-initial sm:px-5 sm:text-base"
             >
               <ArrowUpToLine className="size-4 sm:size-5" />
               <span className="hidden sm:inline">Withdraw</span>

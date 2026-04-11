@@ -223,7 +223,7 @@ export function AdminContentManager() {
                   <button
                     type="button"
                     onClick={handleNewLocale}
-                    className="inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-1 text-xs font-semibold text-slate-200 transition hover:bg-white/10 min-h-[32px]"
+                    className="inline-flex items-center gap-2 rounded-full border border-slate-600/50 bg-slate-800/60 px-3 py-1 text-xs font-semibold text-slate-200 transition hover:bg-slate-700/70 hover:text-white min-h-[32px]"
                   >
                     <Sparkles className="size-4 text-blue-300 shrink-0" /> 
                     <span className="hidden sm:inline">New locale</span>

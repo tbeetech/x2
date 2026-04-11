@@ -27,7 +27,7 @@ export function CollapsibleSection({
             <button
               type="button"
               onClick={onToggle}
-              className="rounded-full border border-white/10 p-1.5 text-slate-300 transition hover:bg-white/10 shrink-0"
+              className="rounded-full border border-slate-600/50 bg-slate-800/50 p-1.5 text-slate-300 transition hover:bg-slate-700/60 hover:text-white shrink-0"
               aria-label={isCollapsed ? "Expand section" : "Collapse section"}
             >
               {isCollapsed ? (

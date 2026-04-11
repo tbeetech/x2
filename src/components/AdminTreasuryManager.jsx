@@ -196,7 +196,7 @@ export function AdminTreasuryManager() {
           <button
             type="button"
             onClick={() => setShowAddForm(!showAddForm)}
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10 min-h-[40px]"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-600/50 bg-slate-800/60 px-4 py-2 text-sm font-semibold text-slate-200 transition hover:bg-slate-700/70 hover:text-white min-h-[40px]"
           >
             <Plus className="size-4 shrink-0" />
             Add Crypto
