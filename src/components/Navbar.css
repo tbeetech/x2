@@ -47,6 +47,11 @@
 .navbar__item {
   position: relative;
 }
+.navbar__item--drop {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
 .navbar__item a,
 .navbar__item > a {
   display: block;
